@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Horoscope.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Horoscope"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <NavigationView IsSettingsVisible="False" IsBackButtonVisible="Collapsed" IsBackEnabled="False" x:Name="Navigation">
+        <NavigationView.Resources>
+            <x:Double x:Key="NavigationViewItemOnLeftMinHeight">100</x:Double>
+        </NavigationView.Resources>
+        <ScrollViewer x:Name="Frame" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
+            <ProgressRing IsActive="true" Height="50" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </ScrollViewer>
+    </NavigationView>
+</Page>
